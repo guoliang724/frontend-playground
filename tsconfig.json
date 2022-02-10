@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // 输出文件夹
+    "sourceMap": true, // 是否生成映射
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["./src/**/*"]
+}
