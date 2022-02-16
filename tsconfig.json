@@ -5,6 +5,7 @@
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
+    "esModuleInterop": true,
     "module": "commonjs",
     "target": "es5",
     "jsx": "react",
@@ -13,5 +14,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "**/*.spex.ts"]
 }
