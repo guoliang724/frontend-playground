@@ -1,19 +1,15 @@
 {
   "compilerOptions": {
-    "outDir": "./dist", // 输出文件夹
-    "sourceMap": true, // 是否生成映射
-    "strict": true,
+    "moduleResolution": "Node", // 搜寻文件的方式
+    "outDir": "./dist", //  输出目录
+    "sourceMap": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true,
-    "module": "commonjs",
+    "module": "ESNext", // 处理模块导入的方式
     "target": "es5",
     "jsx": "react",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "esModuleInterop": true, // 允许使用commonjs导出、导入
+    "lib": ["DOM", "DOM.Iterable", "ESNext"]
   },
-  "include": ["./src/**/*"],
-  "exclude": ["node_modules", "**/*.spex.ts"]
+  "include": ["./src/**.*"],
+  "exclude": ["./node_modules"]
 }
