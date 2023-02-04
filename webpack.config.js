@@ -47,7 +47,7 @@ module.exports = {
                   },
                 ],
                 [
-                  "@babel/typescript",
+                  "@babel/preset-typescript",
                   {
                     isTSX: true,
                     allExtensions: true,
@@ -97,7 +97,7 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              modules: ture,
+              modules: true,
             },
           },
           {
